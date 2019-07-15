@@ -1,0 +1,36 @@
+@import "vars";
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@font-face {font-family: "Beaufort-Bold";
+    src: url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.eot");
+    src: url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.svg#BeaufortW01-Bold") format("svg");
+}body {
+    background-color: #010A13;
+    font-family: 'Beaufort-Bold';
+    color: #C9AA71;
+}
+.navbar {
+    color : #C9AA71;
+    border: 1px #C9AA71 solid;
+    font-size: 2.0em;
+}
+.collapse {
+text-align: center}
+.logolol {
+    width: 200px;
+}
+.nav-link {
+    color: #C9AA71 !important;
+}
+.nav-link:hover {
+    font-size: 1.05em;
+    transition-duration: 0.5s;
+}
+.jumbotron {
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/006/306/050/large/suke-5dd42dabgw1f8x6b74ohwj21hc0u0thw.jpg?1497556595&dl=1") !important;
+    height: 800px;
+}
