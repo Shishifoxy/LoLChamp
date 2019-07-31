@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Champ{% endblock %}
+
+{% block body %}
+    <h1>Edit Champ</h1>
+
+    {{ include('champ/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('champ_index') }}">back to list</a>
+
+    {{ include('champ/_delete_form.html.twig') }}
+{% endblock %}

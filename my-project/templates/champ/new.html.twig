@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Champ{% endblock %}
+
+{% block body %}
+    <h1>Create new Champ</h1>
+
+    {{ include('champ/_form.html.twig') }}
+
+    <a href="{{ path('champ_index') }}">back to list</a>
+{% endblock %}

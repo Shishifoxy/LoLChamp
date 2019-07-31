@@ -12,25 +12,139 @@
     background-color: #010A13;
     font-family: 'Beaufort-Bold';
     color: #C9AA71;
+    text-shadow: 1px 1px 2px #010A13;
 }
 .navbar {
     color : #C9AA71;
     border: 1px #C9AA71 solid;
-    font-size: 2.0em;
+    font-size: 1.5em;
 }
 .collapse {
 text-align: center}
 .logolol {
     width: 200px;
 }
+.nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #C9AA71;
+}
+.nav-link {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #C9AA71 ;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+}
 .nav-link {
     color: #C9AA71 !important;
 }
-.nav-link:hover {
-    font-size: 1.05em;
-    transition-duration: 0.5s;
+.nav-link-ltr::before {
+    width: 0;
+    bottom: 10px;
 }
-.jumbotron {
+
+a.nav-link.nav-link-ltr:hover::before {
+    width: 90%;
+}
+
+.jumbotron1 {
     background-image: url("https://cdna.artstation.com/p/assets/images/images/006/306/050/large/suke-5dd42dabgw1f8x6b74ohwj21hc0u0thw.jpg?1497556595&dl=1") !important;
-    height: 800px;
+    height: 747px;
+    //padding: 0;
+    margin: 0;
+}
+.jumbotron2 {
+    background-image: url("../../public/build/images/yuumi2.jpeg") !important;
+    height: 840px;
+    //padding: 0;
+    margin: 0;
+}
+.jumbotron3 {
+    background-image: url("../../public/build/images/zoe.jpg") !important;
+    height: 840px;
+    //padding: 0;
+    margin: 0;
+}
+/** Image Arrow**/
+.arrowdown {
+    width: 120px;
+
+}
+/** Div qui entoure l'image **/
+.down {
+    position:relative;
+    top:45%;
+    animation: bounce 0.35s ease infinite alternate;
+}
+
+@keyframes bounce{
+    from {top: 45%;}
+    to   {top: 48%;}
+}
+
+hr {
+    background-color: #C9AA71;
+    height: 5px;
+margin: 0
+}
+.btn-discover {
+    background-color: #010A13;
+    color: #C9AA71;
+    border: 1px solid #C9AA71;
+}
+.btn-discover2 {
+    background-color: #010A13;
+    color: #C9AA71;
+    border: 1px solid #C9AA71;
+    display: inline !important;
+}
+.btn-discover:hover {
+    background-color: #C9AA71;
+    color: #010A13;
+    border: 2px solid #010A13;
+    font-size: 24px;
+    transition-duration: 0.5s;
+
+}
+.btn-discover2:hover {
+    background-color: #C9AA71;
+    color: #010A13;
+    border: 2px solid #010A13;
+    transition-duration: 0.5s;
+    max-height: 156px;
+
+}
+.txtjum .lead2 {
+    text-align: center;
+}
+.txtjum {
+    position: relative;
+    width: 1000px;
+    top: 25%;
+}
+.lead {
+    font-size: 1.5em;
+}
+.txtjum2 {
+    position: relative;
+    width: 1000px;
+    top: 25%;
+}
+.card {
+    background-color: #010A13;
+    border-color: #C9AA71;
+    padding: 0;
+    max-height: 505.833px;
+}
+.bannchamp {
+    background-image: url("../../public/build/images/poolpart2.jpg");
+    height: 500px;
 }

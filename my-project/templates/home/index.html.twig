@@ -1,10 +1,37 @@
 {% extends 'layout.html.twig' %}
 
-{% block body %}<div class="jumbotron text-center">
-    <h1 class="display-4">Bonjour invocateur !</h1>
+{% block body %}
+    <div class="jumbotron1 text-center">
+    <h1 class="display-3 pt-5">Bonjour invocateur !</h1>
     <p class="lead">Bienvenu sur LoLHelper, ici tu vas pouvoir comparer les champions entre eux, pour faire le meilleur choix sur ta lane</p>
-    <p>Tu auras également accès à toutes les informations concernant tous les champions existants sur LoL actuellement</p>
-    <p class="down">
-        <img src="/assets/images/arr.png">
-    </p>
-</div>{% endblock %}
+    <p class="lead">Tu auras également accès à toutes les informations concernant tous les champions existants sur LoL actuellement</p>
+    <p class="down text-center rounded">
+        <img class ="arrowdown" src="{{ asset('build/images/arr2.png') }}">    </p>
+    </div>
+    <hr>
+    <div class="jumbotron2 text-left ">
+        <div class="txtjum text-center">
+        <h1 class="display-3 pt-5 ">Bibliothèque des champions</h1>
+        <p class="lead">Stats, sorts, lane, ici tu auras accès à toutes les infos concernant les champions</p>
+        <p class="lead2 pt-4">
+            <a class="btn btn-primary btn-lg btn-discover " href="#" role="button">Découvrir</a>
+        </p>
+        </div>
+
+    </div>
+    <hr>
+    <div class="jumbotron3 text-left ">
+        <div class="txtjum2 text-center">
+        <h1 class="display-4 pt-5 ">Top 5 Winrate per lane this season</h1>
+        <p class="lead">Découvrez quels champions doivent être joués dans la méta actuelle et gagnez vos matchups</p>
+        <p class="lead2 pt-4">
+            <a class="btn btn-primary btn-lg btn-discover " href="#" role="button">Apprendre</a>
+        </p>
+        </div>
+
+    </div>
+    <hr>
+
+
+
+{% endblock %}
